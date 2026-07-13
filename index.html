@@ -58,27 +58,54 @@
                         <a href="#contact" class="btn btn-secondary">Get In Touch</a>
                     </div>
                 </div>
-                <div class="hero-stats">
-                    <div class="stat-card">
-                        <div class="stat-number">5</div>
-                        <div class="stat-label">Years PhD Excellence</div>
+                <div class="hero-image-section">
+                    <div class="profile-image-container">
+                        <img src="profile-photo-1.jpg" alt="Emmanuel Djegou - Professional Portrait" class="profile-photo" id="profileImage">
+                        <div class="image-overlay">Click to view gallery</div>
                     </div>
-                    <div class="stat-card">
-                        <div class="stat-number">3</div>
-                        <div class="stat-label">Research Papers</div>
-                    </div>
-                    <div class="stat-card">
-                        <div class="stat-number">500+</div>
-                        <div class="stat-label">Students Taught</div>
-                    </div>
-                    <div class="stat-card">
-                        <div class="stat-number">16M+</div>
-                        <div class="stat-label">Records Processed</div>
-                    </div>
+                </div>
+            </div>
+
+            <div class="hero-stats">
+                <div class="stat-card">
+                    <div class="stat-number">5</div>
+                    <div class="stat-label">Years PhD Excellence</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">3</div>
+                    <div class="stat-label">Research Papers</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">500+</div>
+                    <div class="stat-label">Students Taught</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">16M+</div>
+                    <div class="stat-label">Records Processed</div>
                 </div>
             </div>
         </div>
     </section>
+
+    <!-- Photo Gallery Modal -->
+    <div id="galleryModal" class="gallery-modal">
+        <span class="close" onclick="closeGallery()">&times;</span>
+        <div class="gallery-content">
+            <div class="gallery-main">
+                <img id="galleryImage" src="profile-photo-1.jpg" alt="Gallery Image" class="gallery-main-image">
+                <div class="gallery-caption" id="galleryCaption"></div>
+            </div>
+            <div class="gallery-thumbnails">
+                <img src="profile-photo-1.jpg" alt="Photo 1" class="thumbnail active" onclick="updateGallery('profile-photo-1.jpg', 'Graduation Ceremony - Ph.D. Celebration')">
+                <img src="profile-photo-2.jpg" alt="Photo 2" class="thumbnail" onclick="updateGallery('profile-photo-2.jpg', 'Professional Portrait - Industry Ready')">
+                <img src="profile-photo-3.jpg" alt="Photo 3" class="thumbnail" onclick="updateGallery('profile-photo-3.jpg', 'At Missouri S&T - Research & Innovation')">
+            </div>
+            <div class="gallery-nav">
+                <button class="gallery-prev" onclick="prevImage()">&#10094;</button>
+                <button class="gallery-next" onclick="nextImage()">&#10095;</button>
+            </div>
+        </div>
+    </div>
 
     <!-- About Section -->
     <section id="about" class="about">
@@ -520,9 +547,13 @@
                             <i class="ri-bar-chart-2-line"></i>
                             <span>Kaggle</span>
                         </a>
-                        <a href="https://youtube.com/@emmanueldjegou44" target="_blank" class="social-card" title="YouTube">
+                        <a href="https://youtube.com/@emmanueldjegou44?si=Ov9jhXUDVwSb97p0" target="_blank" class="social-card" title="YouTube (English)">
                             <i class="ri-youtube-line"></i>
-                            <span>YouTube</span>
+                            <span>YouTube (En)</span>
+                        </a>
+                        <a href="https://www.youtube.com/channel/UCqO0bDmzHVe7DjezToerYmw" target="_blank" class="social-card" title="YouTube (French)">
+                            <i class="ri-youtube-line"></i>
+                            <span>YouTube (Fr)</span>
                         </a>
                         <a href="https://www.instagram.com/emmanuel.djegou.official" target="_blank" class="social-card" title="Instagram">
                             <i class="ri-instagram-line"></i>
